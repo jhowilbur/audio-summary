@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+  <body class="bg-base-200">
+<%- include('partials/_header.ejs') %>
+    <main role="main" class="container mt-4">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold mb-5">Upload Audio File</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data" class="space-y-4">
+          <div class="form-control">
+            <input type="file" name="audioFile" class="file-input file-input-bordered w-full" required>
+          </div>
+          <div class="form-control">
+            <button type="submit" class="btn btn-primary w-full">Upload</button>
+          </div>
+        </form>
+        <% if (typeof extractedText !== 'undefined' && typeof summary !== 'undefined') { %>
+          <div class="mt-4">
+            <h2 class="text-2xl font-bold">Extracted Text</h2>
+            <p class="text-lg"><%= extractedText %></p>
+            <h2 class="text-2xl font-bold">Summary</h2>
+            <p class="text-lg"><%= summary %></p>
+          </div>
+        <% } %>
+      </div>
+    </main>
+  </body>
+<%- include('partials/_footer.ejs') %>
+</html>
