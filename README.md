@@ -1,4 +1,3 @@
-```
 # Audio Summary
 
 Audio Summary is an application designed to transform any audio format to MP3, extract text from the audio in various languages, and provide a concise summary of the extracted text. The application leverages Node.js for the backend, MongoDB for data persistence, and OpenAI's API for text extraction and summarization. The frontend is built with plain HTML/CSS and enhanced with DaisyUI for a modern, interactive user experience.
@@ -82,5 +81,4 @@ The project is proprietary (not open source).
 
 ```
 © 2024. All rights reserved.
-```
 ```
